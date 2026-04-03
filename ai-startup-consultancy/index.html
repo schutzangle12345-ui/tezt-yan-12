@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>AI Startup Consultant | Launch & Scale Your AI Product Fast</title>
+    <meta name="description" content="Expert AI startup consultancy for founders & CTOs. Hire an AI startup advisor for pricing strategy, GTM playbooks, and technical scaling. Move from demo to revenue.">
+    <link rel="canonical" href="https://aistartupconsultancy.com/">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI Startup Consultant | Launch & Scale Your AI Product Fast">
+    <meta property="og:description" content="Expert AI startup consultancy for founders & CTOs. Master GTM strategy, pricing, and technical scaling to launch your AI business.">
+    <meta property="og:image" content="logo-tezt-yan-12.png">
+    <meta property="og:url" content="https://aistartupconsultancy.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Startup Consultant | Scale Your AI Product Fast">
+    <meta name="twitter:description" content="Professional advisory for AI founders. From pricing to technical roadmaps.">
+    <meta name="twitter:image" content="logo-tezt-yan-12.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AI Startup Consultancy",
+      "url": "https://aistartupconsultancy.com",
+      "logo": "https://aistartupconsultancy.com/logo-tezt-yan-12.png",
+      "description": "AI startup consultancy to launch AI businesses, hire AI startup consultancy for growth, and scale AI products fast.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+        :root {
+            --color-primary: #000000;
+            --color-primary-dark: #1a1a1a;
+            --color-background: #080808;
+            --color-surface: #121212;
+            --color-surface-soft: #1c1c1c;
+            --color-text: #ffffff;
+            --color-text-muted: #a0a0a0;
+            --color-border: #262626;
+            --color-accent: #ffffff;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --radius-pill: 100px;
+            --radius-card: 32px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            line-height: 1.1;
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+        }
+
+        h1 { font-size: clamp(3rem, 8vw, 5.5rem); margin-bottom: 1.5rem; }
+        h2 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 2rem; }
+        h3 { font-size: 1.75rem; margin-bottom: 1rem; }
+
+        p { font-size: 1.125rem; color: var(--color-text-muted); }
+
+        /* Layout */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        /* Navigation */
+        nav {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background: rgba(8, 8, 8, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .logo-wrapper {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links { display: flex; }
+        }
+
+        .nav-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--color-text-muted); }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            border-radius: var(--radius-pill);
+            font-weight: 800;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-border);
+            color: var(--color-text);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 140px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero { grid-template-columns: 1.2fr 0.8fr; }
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-mockup {
+            background: var(--color-surface);
+            aspect-ratio: 4/3;
+            border-radius: var(--radius-card);
+            border: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-mockup::after {
+            content: "AI ADVISORY INSIGHTS";
+            font-weight: 900;
+            color: rgba(255,255,255,0.03);
+            font-size: 8rem;
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            align-items: center;
+        }
+
+        .text-link {
+            color: var(--color-text-muted);
+            text-decoration: underline;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .text-link:hover { color: var(--color-accent); }
+
+        /* Features Section */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--color-surface);
+            padding: 3.5rem;
+            border-radius: var(--radius-card);
+            border: 1px solid var(--color-border);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--color-text-muted);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: var(--color-accent);
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box svg {
+            width: 30px;
+            height: 30px;
+            stroke: var(--color-primary);
+        }
+
+        /* How It Works */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+
+        .step {
+            position: relative;
+        }
+
+        .step-num {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--color-surface-soft);
+            margin-bottom: -1.5rem;
+            display: block;
+        }
+
+        /* Testimonials */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--color-surface-soft);
+            padding: 3rem;
+            border-radius: var(--radius-card);
+        }
+
+        .quote {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--color-text);
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            background: var(--color-border);
+            border-radius: 50%;
+        }
+
+        .author-info span {
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .author-name { font-weight: 800; color: var(--color-accent); }
+        .author-title { color: var(--color-text-muted); }
+
+        /* Footer */
+        footer {
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 4rem;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--color-text-muted); }
+
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-icons svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .social-icons svg:hover { color: var(--color-accent); }
+
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            background: var(--color-accent);
+            color: var(--color-primary);
+            border-radius: var(--radius-card);
+            padding: 80px 40px;
+            margin-bottom: 100px;
+        }
+
+        .final-cta h2 { margin-bottom: 1rem; }
+        .final-cta p { color: rgba(0,0,0,0.7); margin-bottom: 2.5rem; }
+        .final-cta .btn-primary { background: var(--color-primary); color: var(--color-accent); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            section { padding: 60px 0; }
+            .hero { padding-top: 60px; }
+        }
+    </style>
+  <base href="/ai-startup-consultancy/" />
+</head>
+<body>
+
+    <nav>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo-tezt-yan-12.png" alt="AI Startup Consultancy logo" style="height:40px;object-fit:contain">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="auth.html">Sign In</a>
+                <a href="https://aistartupconsultancy.com" class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Launch Fast</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Stop building demos. Start building a business.</h1>
+                <p>Most AI startups fail because they ignore GTM nuance. We provide the technical strategy, pricing frameworks, and sales playbooks to scale your AI product from pre-seed to Series A.</p>
+                <div class="cta-group">
+                    <a href="https://aistartupconsultancy.com" class="btn btn-primary">Scale My AI Startup</a>
+                    <a href="contact.html" class="text-link">Book a Strategy Audit</a>
+                </div>
+            </div>
+            <div class="hero-mockup">
+                <!-- Visual representation of expert consultancy -->
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="container">
+        <h2>Built for AI Founders</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+                </div>
+                <h3>Pricing Strategy</h3>
+                <p>Move beyond simple seat-based pricing. We help you design usage-based models that align with AI infra costs and value delivery.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path></svg>
+                </div>
+                <h3>GTM Playbooks</h3>
+                <p>Avoid the "shiny demo" trap. Define your specific ICP and build a repeatable sales motion that converts early adopters into long-term partners.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <h3>Technical Roadmaps</h3>
+                <p>From LLM selection to data strategy. We bridge the gap between business objectives and technical implementation to ensure scalability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="container">
+        <h2>The Advisory Process</h2>
+        <div class="steps-container">
+            <div class="step">
+                <span class="step-num">01</span>
+                <h3>Identify the Wedge</h3>
+                <p>We narrow down your problem and ICP to stop chasing demos and start building a high-conviction product roadmap.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">02</span>
+                <h3>Packaging & Offers</h3>
+                <p>We shape your pricing and packaging to move from experimental pilot programs to repeatable, high-margin sales.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">03</span>
+                <h3>Scalable Delivery</h3>
+                <p>We implement playbooks for delivery and technical scale so your growth doesn't depend on manual founder intervention.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2>Trusted by AI Visionaries</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="quote">"They helped us rethink our usage-based pricing before our Seed round. It was the single most valuable strategy pivot we made."</p>
+                <div class="author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <span class="author-name">David Chen</span>
+                        <span class="author-title">CTO, NeuralFlow</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"The GTM playbook narrowed our focus from 'everyone' to a specific niche. Our sales cycle dropped from 4 months to 6 weeks."</p>
+                <div class="author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <span class="author-name">Sarah Jenkins</span>
+                        <span class="author-title">Founder, LexiAI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Expert guidance on our data infra saved us months of rework. If you're building in AI, you need this consultancy."</p>
+                <div class="author">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <span class="author-name">Mark Marcus</span>
+                        <span class="author-title">Partner, VentureStack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="final-cta">
+            <h2>Ready to lead the AI wave?</h2>
+            <p>Join the top 1% of AI startups who focus on business fundamentals, not just hype.</p>
+            <a href="https://aistartupconsultancy.com" class="btn btn-primary">Work With Us</a>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo-wrapper footer-logo">
+                    <img src="logo-tezt-yan-12.png" alt="AI Startup Consultancy logo" style="height:32px;object-fit:contain">
+                </a>
+                <p style="max-width: 250px;">The premier consultancy for AI founders, CTOs, and venture studios building the future.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="auth.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">GTM Strategy</a></li>
+                    <li><a href="#">Pricing Optimization</a></li>
+                    <li><a href="#">Technical Advisory</a></li>
+                    <li><a href="#">Scaling Playbooks</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Startup Consultancy. All rights reserved.</p>
+            <div style="display:flex; gap: 2rem;">
+                <a href="#" style="color:inherit; text-decoration:none;">Privacy Policy</a>
+                <a href="#" style="color:inherit; text-decoration:none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
