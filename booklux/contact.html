@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BookLux | Book Private Jet & Luxury Concierge Services</title>
+    <meta name="description" content="Contact BookLux AI concierge for expert assistance with booking private jets, luxury yachts, villas, and personal chefs. Get professional luxury travel support.">
+    <meta name="keywords" content="book private jet, private jet charter prices, luxury yacht charter booking, luxury villa rentals with concierge, hire private driver, ai luxury concierge">
+    <link rel="canonical" href="https://booklux.ai/contact.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://booklux.ai/contact.html">
+    <meta property="og:title" content="Contact BookLux | Book Private Jet & Luxury Concierge Services">
+    <meta property="og:description" content="Connect with BookLux AI for seamless booking of private jets, yachts, and high-end services. Our concierge team is ready to assist high-net-worth travelers.">
+    <meta property="og:image" content="logo-tezt-yan-12.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://booklux.ai/contact.html">
+    <meta name="twitter:title" content="Contact BookLux | Book Private Jet & Luxury Concierge Services">
+    <meta name="twitter:description" content="Connect with BookLux AI for seamless booking of private jets, yachts, and high-end services.">
+    <meta name="twitter:image" content="logo-tezt-yan-12.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
+
+        :root {
+            --color-primary: #0058a3;
+            --color-primary-dark: #004b8a;
+            --color-background: #ffffff;
+            --color-surface: #fcfcfc;
+            --color-text: #0a0a0a;
+            --color-text-muted: #5e5e5e;
+            --color-border: #efefef;
+            --color-accent: #fbd914;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --header-height: 80px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 120px 0;
+        }
+
+        /* Header */
+        header {
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 1000;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--color-text-muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .cta-button {
+            background-color: var(--color-primary);
+            color: #ffffff;
+            padding: 0.8rem 2rem;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: calc(var(--header-height) + 80px);
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 100;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 i {
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: var(--color-text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Contact Layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* Form */
+        .contact-card {
+            background: var(--color-surface);
+            padding: 3rem;
+            border-radius: 40px;
+            border: 1px solid var(--color-border);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            background: white;
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--color-primary);
+        }
+
+        .form-textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 1.2rem;
+            border-radius: 100px;
+            border: none;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        /* Details Section */
+        .service-details {
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .detail-box h3 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .detail-box p {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            font-weight: 300;
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0 40px 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            margin-top: 1rem;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            max-width: 250px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .footer-col h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-icons svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .contact-grid, .details-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+            .footer-links {
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact BookLux",
+      "description": "BookLux contact page for luxury services including private jet chartering, yacht booking, and luxury concierge.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "BookLux",
+        "url": "https://booklux.ai",
+        "logo": "https://booklux.ai/logo-tezt-yan-12.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-BOOK-LUX",
+          "contactType": "customer service",
+          "availableLanguage": ["English"]
+        }
+      }
+    }
+    </script>
+  <base href="/booklux/" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="logo-tezt-yan-12.png" alt="BookLux logo" style="height:40px;object-fit:contain">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" style="color: var(--color-primary); font-weight: 600;">Contact</a>
+                    <a href="auth.html">Sign In</a>
+                    <a href="contact.html" class="cta-button">Inquire Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Expert <i>Assistance</i></h1>
+            <p class="hero-sub">Direct access to the BookLux specialist team. From booking private jet charters to arranging exclusive villa dining, we handle every detail with absolute discretion.</p>
+        </section>
+
+        <section class="container" style="padding-bottom: 120px;">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Reach Our Concierge</h2>
+                    <p style="margin-bottom: 3rem; color: var(--color-text-muted); font-weight: 300;">Whether you are looking for private jet charter prices, seasonal yacht availability, or a vetted personal chef, our agents are ready to coordinate your request.</p>
+                    
+                    <div class="info-item">
+                        <span class="info-label">Direct Inquiry</span>
+                        <div class="info-value">hello@booklux.ai</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-label">Global Concierge</span>
+                        <div class="info-value">+1 (888) 505-LUXURY</div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Family Offices & Partners</span>
+                        <div class="info-value">partners@booklux.ai</div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Response Time</span>
+                        <div class="info-value">Priority responses within 15 minutes for current members.</div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="email@luxury.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Desired Service</label>
+                            <select class="form-select" required>
+                                <option value="">Select a service...</option>
+                                <option value="jet">Private Jet Charter</option>
+                                <option value="yacht">Luxury Yacht Charter</option>
+                                <option value="villa">Luxury Villa / Chalet</option>
+                                <option value="driver">Private Driver / Transfer</option>
+                                <option value="chef">Private Chef / Events</option>
+                                <option value="vip">Nightlife & VIP Access</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">How can we assist you?</label>
+                            <textarea class="form-textarea" placeholder="Please describe your dates, location, and specific preferences..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details section-padding">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <h3>Jet Charter Guides</h3>
+                        <p>Inquire for real-time pricing on light, midsize, and heavy jets. We provide empty leg alerts and help you choose the right aircraft for your group size and range requirements.</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>Yacht Planning</h3>
+                        <p>Get clarity on APA (Advance Provisioning Allowance), crew expectations, and bespoke Mediterranean or Caribbean itineraries tailored to your guests.</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>Villa Contracts</h3>
+                        <p>We review cancellation policies, hidden local taxes, and staffing requirements for high-end properties so you don't have to manage the paperwork.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo-tezt-yan-12.png" alt="BookLux logo" style="height:35px;object-fit:contain">
+                    <p>AI-driven luxury concierge services for the modern traveler. Jets, yachts, and villas at your fingertips.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="index.html">Private Jets</a></li>
+                            <li><a href="index.html">Yacht Charters</a></li>
+                            <li><a href="index.html">Luxury Villas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="auth.html">Sign In</a></li>
+                            <li><a href="auth.html">Create Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 BookLux. All rights reserved.</div>
+                <div class="social-icons">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
